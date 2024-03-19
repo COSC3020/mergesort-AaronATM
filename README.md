@@ -15,3 +15,7 @@ part of the array each recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+The worst case time complexity of this implementation is $\theta(n^2logn)$
+
+Reasoning: The time complexity of the mergesort() function is $\theta(logn)$ as the input array is divided down into two iteratively regardless of case. The worst-case time complexity of the merge() function is $\theta(n^2)$. In the case that the array is sorted opposite of how it needs to be, each n will be compared to the entire rest of the array (n).
